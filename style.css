@@ -1,0 +1,215 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Oswald', sans-serif;
+}
+html {
+	scroll-behavior: smooth;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 110px 100px;
+}
+.logo {
+	font-family: 'Dancing Script', cursive;
+	text-transform: none;
+	font-size: 50px;
+}
+@media (max-width: 1000px) {
+	section {
+		padding: 100px 50px;
+	}
+}
+@media (max-width: 600px) {
+	section {
+		padding: 75px 30px;
+	}
+}
+@font-face {
+	font-family: Arthemis;
+	src: url(Fonts/Arthemis.ttf);
+}
+@font-face {
+	font-family: StandingFlower;
+	src: url(Fonts/HelloKetta.ttf);
+}
+@font-face {
+	font-family: HelloGraduationSans;
+	src: url(Fonts/HelloGraduationSans.ttf);
+}
+section p {
+	text-align: center;
+	margin-bottom: 40px;
+	padding: 0 20px;
+	line-height: 2;
+	color: #6a6a6a;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+/*header*/
+
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color:  #E40078;
+	padding: 35px 100px 0;
+}
+header h2 {
+	text-transform: uppercase;
+}
+
+@media (max-width: 1000px) {
+	header {
+		padding: 20px 50px;
+	}
+}
+@media (max-width: 700px) {
+	header {
+		flex-direction: column;
+	}
+	header h2 {
+		margin-bottom: 5px;
+	}
+	header nav li {
+		margin: 0 7px;
+	}
+}
+
+/*----------------
+ 	banner-area Section
+----------------*/
+
+.banner-area {
+	position: relative;
+	justify-content: center;
+	min-height: 100vh;
+	color: #fff;
+	text-align: center;
+}
+.banner-area .banner-img {
+	background-image: url(Images/Background/Background.jpg);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	z-index: -1;
+}
+.banner-area h1 {
+	margin-bottom: 15%;
+	font-size: 80px;
+	color : #800080;
+	font-family: Arthemis;
+}
+.banner-area h2	{
+	margin-bottom: 15%;
+	font-size: 60px;
+	color : #800080;
+	font-family: 'Dancing Script', cursive;
+}
+.banner-area p {
+	margin-bottom: 5%;
+	font-size: 70px;
+	color : #800080;
+	font-family: HelloGraduationSans;
+}
+.banner-area h5 {
+	font-size: 50px;
+	font-weight: 300;
+}
+@media (max-width: 800px) {
+	.banner-area {
+		min-height: 100vh;
+	}
+	.banner-area h1 {
+		font-size: 5vh;
+	}
+	.banner-area h2 {
+		font-size: 3vh;
+	}
+	.banner-area h3 {
+		font-size: 2vh;
+	}
+}
+/*about area*/
+
+ul.couple-content {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.couple-content li {
+	padding: 20px;
+	height: 290px;
+	border-radius: 3px;
+	background-clip: content-box;
+	background-size: 130%;
+	background-position: center;
+}
+.couple-left {
+	flex-basis: 40%;
+	background-image: url(https://i.postimg.cc/T14JbD15/1.png);
+}
+.couple-right {
+	flex-basis: 60%;
+}
+.couple-area p {
+	max-width: 800px;
+	margin-bottom: 35px;
+	line-height: 2;
+	text-align: left;
+	padding-left: 0;
+	color: #6a6a6a;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+.section-title {
+	text-transform: uppercase;
+	font-size: 50px;
+	margin-bottom: 5%;
+	color: #333;
+	font-weight: 400;
+}
+.couple-right h2 {
+	margin-bottom: 3%;
+}
+.about-btn {
+	padding: 15px 35px;
+	background: crimson;
+	border-radius: 50px;
+	text-transform: uppercase;
+	color: #fff;
+}
+@media (max-width: 1000px) {
+	.section-title {
+		font-size: 29px;
+	}
+	.couple-left, .couple-right {
+		flex-basis: 100%;
+	}
+	.couple-content li {
+		padding: 8px;
+		-webkit-background-size: 180%;
+		background-size: 180%;
+	}
+}
